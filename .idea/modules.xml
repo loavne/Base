@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Base.iml" filepath="$PROJECT_DIR$/Base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmsManager/SmsManager.iml" filepath="$PROJECT_DIR$/SmsManager/SmsManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activitydemo/activitydemo.iml" filepath="$PROJECT_DIR$/activitydemo/activitydemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activitylaunchmode/activitylaunchmode.iml" filepath="$PROJECT_DIR$/activitylaunchmode/activitylaunchmode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memory/memory.iml" filepath="$PROJECT_DIR$/memory/memory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensordemo/sensordemo.iml" filepath="$PROJECT_DIR$/sensordemo/sensordemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicedemo/servicedemo.iml" filepath="$PROJECT_DIR$/servicedemo/servicedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharedemo/sharedemo.iml" filepath="$PROJECT_DIR$/sharedemo/sharedemo.iml" />
+    </modules>
+  </component>
+</project>

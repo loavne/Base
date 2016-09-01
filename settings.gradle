@@ -1,0 +1,1 @@
+include ':app', ':activitydemo', ':activitylaunchmode', ':servicedemo', ':sharedemo', ':memory', ':SmsManager', ':sensordemo', ':materialdesign'

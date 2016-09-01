@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hlh.base">
+
+    <permission
+        android:name="com.hlh.base.MY_BROADCASTRECEIVER_PERMISSION"
+        android:protectionLevel="normal"/>
+
+    <uses-permission android:name="com.hlh.base.MY_BROADCASTRECEIVER_PERMISSION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.APP_A_SECOND_ACTIVITY"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".FirstReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.hlh.base"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SecondReceiver">
+            <intent-filter android:priority="500">
+                <action android:name="com.hlh.base"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ThirdReceiver">
+            <intent-filter android:priority="0">
+                <action android:name="com.hlh.base"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <!--注册广播接收地址-->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <!--消息推送服务-->
+        <service android:name=".MsgPushService"/>
+
+        <receiver android:name=".NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
